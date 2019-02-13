@@ -11,13 +11,13 @@ import UIKit
 /// xibファイルと紐付けるUIViewの基底クラス
 /// - class name と xib name を一致させる必要がある.
 /// - AutoresizingMaskではなくAutoLayoutを使用すること
-public class XibView: UIView {
+open class XibView: UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
         loadNib()
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    public required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         loadNib()
     }
