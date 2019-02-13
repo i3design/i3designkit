@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "DE9DFD282213B0BB00A94968"
-               BuildableName = "i3DesignKit.framework"
-               BlueprintName = "i3DesignKit"
-               ReferencedContainer = "container:i3DesignKit.xcodeproj">
+               BuildableName = "i3designKit.framework"
+               BlueprintName = "i3designKit"
+               ReferencedContainer = "container:i3designKit.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "DE9DFD312213B0BB00A94968"
-               BuildableName = "i3DesignKitTests.xctest"
-               BlueprintName = "i3DesignKitTests"
-               ReferencedContainer = "container:i3DesignKit.xcodeproj">
+               BuildableName = "i3designKitTests.xctest"
+               BlueprintName = "i3designKitTests"
+               ReferencedContainer = "container:i3designKit.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -43,9 +43,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "DE9DFD282213B0BB00A94968"
-            BuildableName = "i3DesignKit.framework"
-            BlueprintName = "i3DesignKit"
-            ReferencedContainer = "container:i3DesignKit.xcodeproj">
+            BuildableName = "i3designKit.framework"
+            BlueprintName = "i3designKit"
+            ReferencedContainer = "container:i3designKit.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -65,9 +65,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "DE9DFD282213B0BB00A94968"
-            BuildableName = "i3DesignKit.framework"
-            BlueprintName = "i3DesignKit"
-            ReferencedContainer = "container:i3DesignKit.xcodeproj">
+            BuildableName = "i3designKit.framework"
+            BlueprintName = "i3designKit"
+            ReferencedContainer = "container:i3designKit.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -83,9 +83,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "DE9DFD282213B0BB00A94968"
-            BuildableName = "i3DesignKit.framework"
-            BlueprintName = "i3DesignKit"
-            ReferencedContainer = "container:i3DesignKit.xcodeproj">
+            BuildableName = "i3designKit.framework"
+            BlueprintName = "i3designKit"
+            ReferencedContainer = "container:i3designKit.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>

@@ -1,15 +1,15 @@
 //
-//  i3DesignKitTests.swift
-//  i3DesignKitTests
+//  i3designKitTests.swift
+//  i3designKitTests
 //
 //  Created by Takuto Nagano on 2019/02/13.
 //  Copyright © 2019 i3Design. All rights reserved.
 //
 
 import XCTest
-@testable import i3DesignKit
+@testable import i3designKit
 
-class i3DesignKitTests: XCTestCase {
+class i3designKitTests: XCTestCase {
 
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
