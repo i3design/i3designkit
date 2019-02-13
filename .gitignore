@@ -69,7 +69,9 @@ fastlane/Preview.html
 fastlane/screenshots
 fastlane/test_output
 
-
 # bitrise
 .bitrise.secrets.yml
 codesigndoc_exports/
+
+# mac OS
+.DS_Store
