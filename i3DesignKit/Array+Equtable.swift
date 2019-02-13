@@ -13,7 +13,7 @@ extension Array where Element: Equatable {
     /// 配列の差分（引き算）
     ///
     /// - Parameter other: 除外する値の配列
-    mutating func subtract(_ other: [Element]) {
+    public mutating func subtract(_ other: [Element]) {
         self = subtracting(other)
     }
 }

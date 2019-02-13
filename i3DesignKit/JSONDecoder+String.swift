@@ -12,11 +12,11 @@ import Foundation
 
 extension JSONDecoder {
     
-    func decode<T>(string: String, using: String.Encoding = .utf8) throws -> T where T: Decodable {
+    public func decode<T>(string: String, using: String.Encoding = .utf8) throws -> T where T: Decodable {
         return try decode(T.self, string: string, using: using)
     }
     
-    func decode<T>(_ type: T.Type, string: String, using: String.Encoding = .utf8) throws -> T where T: Decodable {
+    public func decode<T>(_ type: T.Type, string: String, using: String.Encoding = .utf8) throws -> T where T: Decodable {
         guard let data = string.data(using: using) else {
             let context = DecodingError.Context(codingPath: [],
                                                 debugDescription: "failed to convert string to data using \(using.description)",

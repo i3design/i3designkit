@@ -11,7 +11,7 @@ import Foundation
 extension Sequence where Element: Equatable {
     
     /// 重複した要素のない配列を取得
-    var unique: [Element] {
+    public var unique: [Element] {
         return reduce([Element]()) { $0.contains($1) ? $0 : $0 + [$1] }
     }
     
@@ -19,7 +19,7 @@ extension Sequence where Element: Equatable {
     ///
     /// - Parameter other: 除外する値の配列
     /// - Returns: otherに含まれるものが除外された配列
-    func subtracting(_ other: [Element]) -> [Element] {
+    public func subtracting(_ other: [Element]) -> [Element] {
         return compactMap { element in
             if other.filter({ $0 == element }).count == 0 {
                 return element

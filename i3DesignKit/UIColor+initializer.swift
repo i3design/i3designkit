@@ -15,7 +15,7 @@ extension UIColor {
     /// - Parameters:
     ///   - hex: 16進数による色情報を指定 ex)0x12FF34
     ///   - alpha: 透明度[0-1.0]
-    convenience init(hex: Int, alpha: CGFloat = 1.0) {
+    public convenience init(hex: Int, alpha: CGFloat = 1.0) {
         let r = CGFloat((hex & 0xFF0000) >> 16) / 255.0
         let g = CGFloat((hex & 0x00FF00) >> 8) / 255.0
         let b = CGFloat(hex & 0x0000FF) / 255.0
@@ -30,7 +30,7 @@ extension UIColor {
     ///   - y: yellow [0-1]
     ///   - k: black [0-1]
     ///   - alpha: alpha [0-1]
-    convenience init(cyan c: CGFloat, magenta m: CGFloat, yellow y: CGFloat, black k: CGFloat, alpha: CGFloat = 1.0) {
+    public convenience init(cyan c: CGFloat, magenta m: CGFloat, yellow y: CGFloat, black k: CGFloat, alpha: CGFloat = 1.0) {
         let r = (1 - c) * (1 - k)
         let g = (1 - m) * (1 - k)
         let b = (1 - y) * (1 - k)

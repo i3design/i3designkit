@@ -9,15 +9,15 @@
 import Foundation
 
 extension Calendar {
-    static var gregorian: Calendar {
+    public static var gregorian: Calendar {
         return Calendar(identifier: .gregorian)
     }
     
-    static var japanese: Calendar {
+    public static var japanese: Calendar {
         return Calendar(identifier: .japanese)
     }
     
-    static var iso8601: Calendar {
+    public static var iso8601: Calendar {
         return Calendar(identifier: .iso8601)
     }
 }

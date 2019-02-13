@@ -9,7 +9,7 @@
 import Foundation
 
 extension URLComponents {
-    func queryValue(for name: String) -> String? {
+    public func queryValue(for name: String) -> String? {
         return self.queryItems?.filter { $0.name == name }.first?.value
     }
 }

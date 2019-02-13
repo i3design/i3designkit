@@ -19,7 +19,7 @@ public enum OpenSchemes {
 
 extension OpenSchemes {
     
-    var schemeString: String {
+    public var schemeString: String {
         // 参考: http://blog.thetheorier.com/entry/urlscheme-ios12
         switch self {
         case .url(let string):
@@ -33,7 +33,7 @@ extension OpenSchemes {
         }
     }
     
-    var url: URL? {
+    public var url: URL? {
         return URL(string: schemeString)
     }
 }

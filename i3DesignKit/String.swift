@@ -13,7 +13,7 @@ extension String {
     ///
     /// - Parameter size: 分割の単位となる長さ (例: 2文字毎に区切りたい場合は2を指定する)
     /// - Returns: 分割結果の配列
-    func split(length size: Int) -> [String] {
+    public func split(length size: Int) -> [String] {
         let length = max(size, 1)
         
         var source = self

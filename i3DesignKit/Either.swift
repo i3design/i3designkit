@@ -9,7 +9,7 @@
 import Foundation
 
 /// 型Aか型Bのどちらかのオブジェクトを返す型
-enum Either<Left, Right> {
+public enum Either<Left, Right> {
     case left(Left)
     case right(Right)
     

@@ -10,12 +10,12 @@ import Foundation
 
 extension TimeZone {
     /// 日本時(Japan Standard Time)
-    static var JST: TimeZone {
+    public static var JST: TimeZone {
         return TimeZone(identifier: "Asia/Tokyo")!
     }
     
     /// 協定世界時(Universal Time, Coordinated)
-    static var UTC: TimeZone {
+    public static var UTC: TimeZone {
         return TimeZone(identifier: "UTC")!
     }
 }
