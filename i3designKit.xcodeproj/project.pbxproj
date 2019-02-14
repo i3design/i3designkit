@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DE90D27B22150261006F6552 /* Sequence+EquatableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE90D27A22150261006F6552 /* Sequence+EquatableTests.swift */; };
+		DE90D27D2215044D006F6552 /* Array+EqutableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE90D27C2215044D006F6552 /* Array+EqutableTests.swift */; };
+		DE90D27F22150F48006F6552 /* DateFormatterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE90D27E22150F48006F6552 /* DateFormatterTests.swift */; };
+		DE90D2812215281E006F6552 /* EitherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE90D2802215281E006F6552 /* EitherTests.swift */; };
+		DE90D28322152987006F6552 /* JSONDecoder+StringTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE90D28222152987006F6552 /* JSONDecoder+StringTests.swift */; };
+		DE90D28522152C24006F6552 /* LocaleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE90D28422152C24006F6552 /* LocaleTests.swift */; };
+		DE90D28722152CF4006F6552 /* CalendarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE90D28622152CF4006F6552 /* CalendarTests.swift */; };
+		DE90D28922152D68006F6552 /* NSObject+ClassNameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE90D28822152D68006F6552 /* NSObject+ClassNameTests.swift */; };
+		DE90D28B22152EC2006F6552 /* NumberFormatter+NumberStyleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE90D28A22152EC2006F6552 /* NumberFormatter+NumberStyleTests.swift */; };
+		DE90D28D2215334A006F6552 /* Sequence+DecodableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE90D28C2215334A006F6552 /* Sequence+DecodableTests.swift */; };
 		DE9DFD332213B0BB00A94968 /* i3designKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE9DFD292213B0BB00A94968 /* i3designKit.framework */; };
 		DE9DFD382213B0BC00A94968 /* i3DesignKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9DFD372213B0BC00A94968 /* i3DesignKitTests.swift */; };
 		DE9DFD3A2213B0BC00A94968 /* i3designKit.h in Headers */ = {isa = PBXBuildFile; fileRef = DE9DFD2C2213B0BB00A94968 /* i3designKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -41,6 +51,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DE90D27A22150261006F6552 /* Sequence+EquatableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sequence+EquatableTests.swift"; sourceTree = "<group>"; };
+		DE90D27C2215044D006F6552 /* Array+EqutableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+EqutableTests.swift"; sourceTree = "<group>"; };
+		DE90D27E22150F48006F6552 /* DateFormatterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatterTests.swift; sourceTree = "<group>"; };
+		DE90D2802215281E006F6552 /* EitherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EitherTests.swift; sourceTree = "<group>"; };
+		DE90D28222152987006F6552 /* JSONDecoder+StringTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JSONDecoder+StringTests.swift"; sourceTree = "<group>"; };
+		DE90D28422152C24006F6552 /* LocaleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocaleTests.swift; sourceTree = "<group>"; };
+		DE90D28622152CF4006F6552 /* CalendarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarTests.swift; sourceTree = "<group>"; };
+		DE90D28822152D68006F6552 /* NSObject+ClassNameTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+ClassNameTests.swift"; sourceTree = "<group>"; };
+		DE90D28A22152EC2006F6552 /* NumberFormatter+NumberStyleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NumberFormatter+NumberStyleTests.swift"; sourceTree = "<group>"; };
+		DE90D28C2215334A006F6552 /* Sequence+DecodableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sequence+DecodableTests.swift"; sourceTree = "<group>"; };
 		DE9DFD292213B0BB00A94968 /* i3designKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = i3designKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE9DFD2C2213B0BB00A94968 /* i3designKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = i3designKit.h; sourceTree = "<group>"; };
 		DE9DFD2D2213B0BB00A94968 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -136,6 +156,16 @@
 			children = (
 				DE9DFD372213B0BC00A94968 /* i3DesignKitTests.swift */,
 				DE9DFD392213B0BC00A94968 /* Info.plist */,
+				DE90D27A22150261006F6552 /* Sequence+EquatableTests.swift */,
+				DE90D27C2215044D006F6552 /* Array+EqutableTests.swift */,
+				DE90D27E22150F48006F6552 /* DateFormatterTests.swift */,
+				DE90D2802215281E006F6552 /* EitherTests.swift */,
+				DE90D28222152987006F6552 /* JSONDecoder+StringTests.swift */,
+				DE90D28422152C24006F6552 /* LocaleTests.swift */,
+				DE90D28622152CF4006F6552 /* CalendarTests.swift */,
+				DE90D28822152D68006F6552 /* NSObject+ClassNameTests.swift */,
+				DE90D28A22152EC2006F6552 /* NumberFormatter+NumberStyleTests.swift */,
+				DE90D28C2215334A006F6552 /* Sequence+DecodableTests.swift */,
 			);
 			path = i3designKitTests;
 			sourceTree = "<group>";
@@ -274,7 +304,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE90D27F22150F48006F6552 /* DateFormatterTests.swift in Sources */,
+				DE90D2812215281E006F6552 /* EitherTests.swift in Sources */,
+				DE90D28B22152EC2006F6552 /* NumberFormatter+NumberStyleTests.swift in Sources */,
 				DE9DFD382213B0BC00A94968 /* i3DesignKitTests.swift in Sources */,
+				DE90D28722152CF4006F6552 /* CalendarTests.swift in Sources */,
+				DE90D28922152D68006F6552 /* NSObject+ClassNameTests.swift in Sources */,
+				DE90D27B22150261006F6552 /* Sequence+EquatableTests.swift in Sources */,
+				DE90D27D2215044D006F6552 /* Array+EqutableTests.swift in Sources */,
+				DE90D28322152987006F6552 /* JSONDecoder+StringTests.swift in Sources */,
+				DE90D28D2215334A006F6552 /* Sequence+DecodableTests.swift in Sources */,
+				DE90D28522152C24006F6552 /* LocaleTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
