@@ -11,6 +11,7 @@
 		DE50E5592216528F0059FB31 /* TimeZoneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE50E5582216528F0059FB31 /* TimeZoneTests.swift */; };
 		DE50E55B221654570059FB31 /* URLComponentsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE50E55A221654570059FB31 /* URLComponentsTests.swift */; };
 		DE50E55D22165B290059FB31 /* UIColor+initializerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE50E55C22165B290059FB31 /* UIColor+initializerTests.swift */; };
+		DE50E55F221660070059FB31 /* Storyboardable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE50E55E221660070059FB31 /* Storyboardable.swift */; };
 		DE90D27B22150261006F6552 /* Sequence+EquatableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE90D27A22150261006F6552 /* Sequence+EquatableTests.swift */; };
 		DE90D27D2215044D006F6552 /* Array+EqutableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE90D27C2215044D006F6552 /* Array+EqutableTests.swift */; };
 		DE90D27F22150F48006F6552 /* DateFormatterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE90D27E22150F48006F6552 /* DateFormatterTests.swift */; };
@@ -59,6 +60,7 @@
 		DE50E5582216528F0059FB31 /* TimeZoneTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeZoneTests.swift; sourceTree = "<group>"; };
 		DE50E55A221654570059FB31 /* URLComponentsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLComponentsTests.swift; sourceTree = "<group>"; };
 		DE50E55C22165B290059FB31 /* UIColor+initializerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+initializerTests.swift"; sourceTree = "<group>"; };
+		DE50E55E221660070059FB31 /* Storyboardable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboardable.swift; sourceTree = "<group>"; };
 		DE90D27A22150261006F6552 /* Sequence+EquatableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sequence+EquatableTests.swift"; sourceTree = "<group>"; };
 		DE90D27C2215044D006F6552 /* Array+EqutableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+EqutableTests.swift"; sourceTree = "<group>"; };
 		DE90D27E22150F48006F6552 /* DateFormatterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatterTests.swift; sourceTree = "<group>"; };
@@ -155,6 +157,7 @@
 				DE9DFD442213B10300A94968 /* UIImage.swift */,
 				DE9DFD4C2213B10300A94968 /* URLComponents.swift */,
 				DE9DFD512213B10400A94968 /* XibView.swift */,
+				DE50E55E221660070059FB31 /* Storyboardable.swift */,
 			);
 			path = i3designKit;
 			sourceTree = "<group>";
@@ -294,6 +297,7 @@
 				DE9DFD5C2213B10400A94968 /* UIApplication+OpenURL.swift in Sources */,
 				DE9DFD5F2213B10400A94968 /* String.swift in Sources */,
 				DE9DFD582213B10400A94968 /* DateFormatter.swift in Sources */,
+				DE50E55F221660070059FB31 /* Storyboardable.swift in Sources */,
 				DE9DFD5D2213B10400A94968 /* UIColor+initializer.swift in Sources */,
 				DE9DFD552213B10400A94968 /* TimeZone.swift in Sources */,
 				DE9DFD572213B10400A94968 /* Injectable.swift in Sources */,
