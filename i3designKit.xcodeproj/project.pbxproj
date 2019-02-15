@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DE50E557221651980059FB31 /* StringTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE50E556221651980059FB31 /* StringTests.swift */; };
+		DE50E5592216528F0059FB31 /* TimeZoneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE50E5582216528F0059FB31 /* TimeZoneTests.swift */; };
+		DE50E55B221654570059FB31 /* URLComponentsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE50E55A221654570059FB31 /* URLComponentsTests.swift */; };
+		DE50E55D22165B290059FB31 /* UIColor+initializerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE50E55C22165B290059FB31 /* UIColor+initializerTests.swift */; };
 		DE90D27B22150261006F6552 /* Sequence+EquatableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE90D27A22150261006F6552 /* Sequence+EquatableTests.swift */; };
 		DE90D27D2215044D006F6552 /* Array+EqutableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE90D27C2215044D006F6552 /* Array+EqutableTests.swift */; };
 		DE90D27F22150F48006F6552 /* DateFormatterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE90D27E22150F48006F6552 /* DateFormatterTests.swift */; };
@@ -51,6 +55,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DE50E556221651980059FB31 /* StringTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringTests.swift; sourceTree = "<group>"; };
+		DE50E5582216528F0059FB31 /* TimeZoneTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeZoneTests.swift; sourceTree = "<group>"; };
+		DE50E55A221654570059FB31 /* URLComponentsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLComponentsTests.swift; sourceTree = "<group>"; };
+		DE50E55C22165B290059FB31 /* UIColor+initializerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+initializerTests.swift"; sourceTree = "<group>"; };
 		DE90D27A22150261006F6552 /* Sequence+EquatableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sequence+EquatableTests.swift"; sourceTree = "<group>"; };
 		DE90D27C2215044D006F6552 /* Array+EqutableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+EqutableTests.swift"; sourceTree = "<group>"; };
 		DE90D27E22150F48006F6552 /* DateFormatterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatterTests.swift; sourceTree = "<group>"; };
@@ -166,6 +174,10 @@
 				DE90D28822152D68006F6552 /* NSObject+ClassNameTests.swift */,
 				DE90D28A22152EC2006F6552 /* NumberFormatter+NumberStyleTests.swift */,
 				DE90D28C2215334A006F6552 /* Sequence+DecodableTests.swift */,
+				DE50E556221651980059FB31 /* StringTests.swift */,
+				DE50E5582216528F0059FB31 /* TimeZoneTests.swift */,
+				DE50E55A221654570059FB31 /* URLComponentsTests.swift */,
+				DE50E55C22165B290059FB31 /* UIColor+initializerTests.swift */,
 			);
 			path = i3designKitTests;
 			sourceTree = "<group>";
@@ -307,13 +319,17 @@
 				DE90D27F22150F48006F6552 /* DateFormatterTests.swift in Sources */,
 				DE90D2812215281E006F6552 /* EitherTests.swift in Sources */,
 				DE90D28B22152EC2006F6552 /* NumberFormatter+NumberStyleTests.swift in Sources */,
+				DE50E55B221654570059FB31 /* URLComponentsTests.swift in Sources */,
+				DE50E55D22165B290059FB31 /* UIColor+initializerTests.swift in Sources */,
 				DE9DFD382213B0BC00A94968 /* i3DesignKitTests.swift in Sources */,
+				DE50E5592216528F0059FB31 /* TimeZoneTests.swift in Sources */,
 				DE90D28722152CF4006F6552 /* CalendarTests.swift in Sources */,
 				DE90D28922152D68006F6552 /* NSObject+ClassNameTests.swift in Sources */,
 				DE90D27B22150261006F6552 /* Sequence+EquatableTests.swift in Sources */,
 				DE90D27D2215044D006F6552 /* Array+EqutableTests.swift in Sources */,
 				DE90D28322152987006F6552 /* JSONDecoder+StringTests.swift in Sources */,
 				DE90D28D2215334A006F6552 /* Sequence+DecodableTests.swift in Sources */,
+				DE50E557221651980059FB31 /* StringTests.swift in Sources */,
 				DE90D28522152C24006F6552 /* LocaleTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

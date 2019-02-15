@@ -14,8 +14,8 @@ extension TimeZone {
         return TimeZone(identifier: "Asia/Tokyo")!
     }
     
-    /// 協定世界時(Universal Time, Coordinated)
-    public static var UTC: TimeZone {
-        return TimeZone(identifier: "UTC")!
+    /// グリニッジ標準時(Greenwich Mean Time)
+    public static var GMT: TimeZone {
+        return TimeZone(identifier: "GMT")!
     }
 }

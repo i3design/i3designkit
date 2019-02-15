@@ -1,5 +1,5 @@
 //
-//  String+extension.swift
+//  String.swift
 //  i3Design
 //
 //  Created by Takuto Nagano on 2019/02/08.
@@ -13,8 +13,10 @@ extension String {
     ///
     /// - Parameter size: 分割の単位となる長さ (例: 2文字毎に区切りたい場合は2を指定する)
     /// - Returns: 分割結果の配列
-    public func split(length size: Int) -> [String] {
-        let length = max(size, 1)
+    public func split(length: Int) -> [String] {
+        if length < 1 {
+            return [self]
+        }
         
         var source = self
         for i in 0 ..< (source.count - 1) / length {

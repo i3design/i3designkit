@@ -8,8 +8,6 @@
 
 import Foundation
 
-import Foundation
-
 extension JSONDecoder {
     
     public func decode<T>(string: String, using: String.Encoding = .utf8) throws -> T where T: Decodable {
