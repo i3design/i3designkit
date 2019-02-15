@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DE2A440A2216A5BD00474C3D /* PromiseKit.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = DE50E56222166AF20059FB31 /* PromiseKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DE2A440D2216A9F100474C3D /* AnyReadableRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2A440C2216A9F100474C3D /* AnyReadableRepositoryTests.swift */; };
+		DE2A440F2216AD0400474C3D /* AnyRepositoryRWTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2A440E2216AD0400474C3D /* AnyRepositoryRWTests.swift */; };
+		DE2A44112216BA9900474C3D /* KeyObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2A44102216BA9900474C3D /* KeyObject.swift */; };
 		DE50E557221651980059FB31 /* StringTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE50E556221651980059FB31 /* StringTests.swift */; };
 		DE50E5592216528F0059FB31 /* TimeZoneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE50E5582216528F0059FB31 /* TimeZoneTests.swift */; };
 		DE50E55B221654570059FB31 /* URLComponentsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE50E55A221654570059FB31 /* URLComponentsTests.swift */; };
@@ -63,7 +67,23 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		DE2A44092216A5B300474C3D /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				DE2A440A2216A5BD00474C3D /* PromiseKit.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		DE2A440C2216A9F100474C3D /* AnyReadableRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyReadableRepositoryTests.swift; sourceTree = "<group>"; };
+		DE2A440E2216AD0400474C3D /* AnyRepositoryRWTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyRepositoryRWTests.swift; sourceTree = "<group>"; };
+		DE2A44102216BA9900474C3D /* KeyObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyObject.swift; sourceTree = "<group>"; };
 		DE50E556221651980059FB31 /* StringTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringTests.swift; sourceTree = "<group>"; };
 		DE50E5582216528F0059FB31 /* TimeZoneTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeZoneTests.swift; sourceTree = "<group>"; };
 		DE50E55A221654570059FB31 /* URLComponentsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLComponentsTests.swift; sourceTree = "<group>"; };
@@ -133,6 +153,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DE2A440B2216A9E000474C3D /* protocol */ = {
+			isa = PBXGroup;
+			children = (
+				DE2A440C2216A9F100474C3D /* AnyReadableRepositoryTests.swift */,
+				DE2A440E2216AD0400474C3D /* AnyRepositoryRWTests.swift */,
+				DE2A44102216BA9900474C3D /* KeyObject.swift */,
+			);
+			path = protocol;
+			sourceTree = "<group>";
+		};
 		DE50E56122166AF10059FB31 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -148,11 +178,11 @@
 				DE50E56F22168F650059FB31 /* AnyRepositoryRE.swift */,
 				DE50E56D22168F290059FB31 /* AnyRepositoryRW.swift */,
 				DE50E57122168F8E0059FB31 /* AnyRepositoryRWE.swift */,
+				DE50E5752216900D0059FB31 /* EditableRepository.swift */,
 				DE9DFD452213B10300A94968 /* Injectable.swift */,
 				DE50E56922168E680059FB31 /* ReadableRepository.swift */,
 				DE50E55E221660070059FB31 /* Storyboardable.swift */,
 				DE50E57322168FF10059FB31 /* WritableRepository.swift */,
-				DE50E5752216900D0059FB31 /* EditableRepository.swift */,
 			);
 			path = protocol;
 			sourceTree = "<group>";
@@ -252,6 +282,7 @@
 			children = (
 				DE9DFD392213B0BC00A94968 /* Info.plist */,
 				DE50E56722168D9C0059FB31 /* Core */,
+				DE2A440B2216A9E000474C3D /* protocol */,
 				DE50E56822168DD10059FB31 /* UIKit */,
 			);
 			path = i3designKitTests;
@@ -297,6 +328,7 @@
 				DE9DFD2E2213B0BB00A94968 /* Sources */,
 				DE9DFD2F2213B0BB00A94968 /* Frameworks */,
 				DE9DFD302213B0BB00A94968 /* Resources */,
+				DE2A44092216A5B300474C3D /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -422,6 +454,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE2A44112216BA9900474C3D /* KeyObject.swift in Sources */,
 				DE90D27F22150F48006F6552 /* DateFormatterTests.swift in Sources */,
 				DE90D2812215281E006F6552 /* EitherTests.swift in Sources */,
 				DE90D28B22152EC2006F6552 /* NumberFormatter+NumberStyleTests.swift in Sources */,
@@ -431,8 +464,10 @@
 				DE90D28722152CF4006F6552 /* CalendarTests.swift in Sources */,
 				DE90D28922152D68006F6552 /* NSObject+ClassNameTests.swift in Sources */,
 				DE90D27B22150261006F6552 /* Sequence+EquatableTests.swift in Sources */,
+				DE2A440F2216AD0400474C3D /* AnyRepositoryRWTests.swift in Sources */,
 				DE90D27D2215044D006F6552 /* Array+EqutableTests.swift in Sources */,
 				DE90D28322152987006F6552 /* JSONDecoder+StringTests.swift in Sources */,
+				DE2A440D2216A9F100474C3D /* AnyReadableRepositoryTests.swift in Sources */,
 				DE90D28D2215334A006F6552 /* Sequence+DecodableTests.swift in Sources */,
 				DE50E557221651980059FB31 /* StringTests.swift in Sources */,
 				DE90D28522152C24006F6552 /* LocaleTests.swift in Sources */,
