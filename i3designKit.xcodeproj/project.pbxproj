@@ -24,7 +24,6 @@
 		DE90D28B22152EC2006F6552 /* NumberFormatter+NumberStyleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE90D28A22152EC2006F6552 /* NumberFormatter+NumberStyleTests.swift */; };
 		DE90D28D2215334A006F6552 /* Sequence+DecodableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE90D28C2215334A006F6552 /* Sequence+DecodableTests.swift */; };
 		DE9DFD332213B0BB00A94968 /* i3designKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE9DFD292213B0BB00A94968 /* i3designKit.framework */; };
-		DE9DFD382213B0BC00A94968 /* i3DesignKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9DFD372213B0BC00A94968 /* i3DesignKitTests.swift */; };
 		DE9DFD3A2213B0BC00A94968 /* i3designKit.h in Headers */ = {isa = PBXBuildFile; fileRef = DE9DFD2C2213B0BB00A94968 /* i3designKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DE9DFD552213B10400A94968 /* TimeZone.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9DFD432213B10300A94968 /* TimeZone.swift */; };
 		DE9DFD562213B10400A94968 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9DFD442213B10300A94968 /* UIImage.swift */; };
@@ -77,7 +76,6 @@
 		DE9DFD2C2213B0BB00A94968 /* i3designKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = i3designKit.h; sourceTree = "<group>"; };
 		DE9DFD2D2213B0BB00A94968 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DE9DFD322213B0BB00A94968 /* i3designKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = i3designKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		DE9DFD372213B0BC00A94968 /* i3DesignKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = i3DesignKitTests.swift; sourceTree = "<group>"; };
 		DE9DFD392213B0BC00A94968 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DE9DFD432213B10300A94968 /* TimeZone.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeZone.swift; sourceTree = "<group>"; };
 		DE9DFD442213B10300A94968 /* UIImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
@@ -127,6 +125,74 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		DE50E56422168D1B0059FB31 /* protocol */ = {
+			isa = PBXGroup;
+			children = (
+				DE9DFD452213B10300A94968 /* Injectable.swift */,
+				DE50E55E221660070059FB31 /* Storyboardable.swift */,
+			);
+			path = protocol;
+			sourceTree = "<group>";
+		};
+		DE50E56522168D3A0059FB31 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				DE9DFD492213B10300A94968 /* Array+Equtable.swift */,
+				DE9DFD4E2213B10400A94968 /* Calendar.swift */,
+				DE9DFD462213B10300A94968 /* DateFormatter.swift */,
+				DE9DFD472213B10300A94968 /* Either.swift */,
+				DE9DFD532213B10400A94968 /* JSONDecoder+String.swift */,
+				DE9DFD542213B10400A94968 /* Locale.swift */,
+				DE9DFD502213B10400A94968 /* NSObject+ClassName.swift */,
+				DE9DFD482213B10300A94968 /* NumberFormatter+NumberStyle.swift */,
+				DE9DFD4F2213B10400A94968 /* Sequence+Decodable.swift */,
+				DE9DFD522213B10400A94968 /* Sequence+Equatable.swift */,
+				DE9DFD4D2213B10300A94968 /* String.swift */,
+				DE9DFD432213B10300A94968 /* TimeZone.swift */,
+				DE9DFD4C2213B10300A94968 /* URLComponents.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		DE50E56622168D430059FB31 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				DE9DFD4A2213B10300A94968 /* UIApplication+OpenURL.swift */,
+				DE9DFD4B2213B10300A94968 /* UIColor+initializer.swift */,
+				DE9DFD442213B10300A94968 /* UIImage.swift */,
+				DE9DFD512213B10400A94968 /* XibView.swift */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		DE50E56722168D9C0059FB31 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				DE90D27C2215044D006F6552 /* Array+EqutableTests.swift */,
+				DE90D28622152CF4006F6552 /* CalendarTests.swift */,
+				DE90D27E22150F48006F6552 /* DateFormatterTests.swift */,
+				DE90D2802215281E006F6552 /* EitherTests.swift */,
+				DE90D28222152987006F6552 /* JSONDecoder+StringTests.swift */,
+				DE90D28422152C24006F6552 /* LocaleTests.swift */,
+				DE90D28822152D68006F6552 /* NSObject+ClassNameTests.swift */,
+				DE90D28A22152EC2006F6552 /* NumberFormatter+NumberStyleTests.swift */,
+				DE90D28C2215334A006F6552 /* Sequence+DecodableTests.swift */,
+				DE90D27A22150261006F6552 /* Sequence+EquatableTests.swift */,
+				DE50E556221651980059FB31 /* StringTests.swift */,
+				DE50E5582216528F0059FB31 /* TimeZoneTests.swift */,
+				DE50E55A221654570059FB31 /* URLComponentsTests.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		DE50E56822168DD10059FB31 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				DE50E55C22165B290059FB31 /* UIColor+initializerTests.swift */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
 		DE9DFD1F2213B0BB00A94968 = {
 			isa = PBXGroup;
 			children = (
@@ -151,25 +217,9 @@
 			children = (
 				DE9DFD2C2213B0BB00A94968 /* i3designKit.h */,
 				DE9DFD2D2213B0BB00A94968 /* Info.plist */,
-				DE9DFD492213B10300A94968 /* Array+Equtable.swift */,
-				DE9DFD4E2213B10400A94968 /* Calendar.swift */,
-				DE9DFD462213B10300A94968 /* DateFormatter.swift */,
-				DE9DFD472213B10300A94968 /* Either.swift */,
-				DE9DFD452213B10300A94968 /* Injectable.swift */,
-				DE9DFD532213B10400A94968 /* JSONDecoder+String.swift */,
-				DE9DFD542213B10400A94968 /* Locale.swift */,
-				DE9DFD502213B10400A94968 /* NSObject+ClassName.swift */,
-				DE9DFD482213B10300A94968 /* NumberFormatter+NumberStyle.swift */,
-				DE9DFD4F2213B10400A94968 /* Sequence+Decodable.swift */,
-				DE9DFD522213B10400A94968 /* Sequence+Equatable.swift */,
-				DE50E55E221660070059FB31 /* Storyboardable.swift */,
-				DE9DFD4D2213B10300A94968 /* String.swift */,
-				DE9DFD432213B10300A94968 /* TimeZone.swift */,
-				DE9DFD4A2213B10300A94968 /* UIApplication+OpenURL.swift */,
-				DE9DFD4B2213B10300A94968 /* UIColor+initializer.swift */,
-				DE9DFD442213B10300A94968 /* UIImage.swift */,
-				DE9DFD4C2213B10300A94968 /* URLComponents.swift */,
-				DE9DFD512213B10400A94968 /* XibView.swift */,
+				DE50E56522168D3A0059FB31 /* Core */,
+				DE50E56422168D1B0059FB31 /* protocol */,
+				DE50E56622168D430059FB31 /* UIKit */,
 			);
 			path = i3designKit;
 			sourceTree = "<group>";
@@ -178,21 +228,8 @@
 			isa = PBXGroup;
 			children = (
 				DE9DFD392213B0BC00A94968 /* Info.plist */,
-				DE90D27C2215044D006F6552 /* Array+EqutableTests.swift */,
-				DE90D28622152CF4006F6552 /* CalendarTests.swift */,
-				DE90D27E22150F48006F6552 /* DateFormatterTests.swift */,
-				DE90D2802215281E006F6552 /* EitherTests.swift */,
-				DE9DFD372213B0BC00A94968 /* i3DesignKitTests.swift */,
-				DE90D28222152987006F6552 /* JSONDecoder+StringTests.swift */,
-				DE90D28422152C24006F6552 /* LocaleTests.swift */,
-				DE90D28822152D68006F6552 /* NSObject+ClassNameTests.swift */,
-				DE90D28A22152EC2006F6552 /* NumberFormatter+NumberStyleTests.swift */,
-				DE90D28C2215334A006F6552 /* Sequence+DecodableTests.swift */,
-				DE90D27A22150261006F6552 /* Sequence+EquatableTests.swift */,
-				DE50E556221651980059FB31 /* StringTests.swift */,
-				DE50E5582216528F0059FB31 /* TimeZoneTests.swift */,
-				DE50E55C22165B290059FB31 /* UIColor+initializerTests.swift */,
-				DE50E55A221654570059FB31 /* URLComponentsTests.swift */,
+				DE50E56722168D9C0059FB31 /* Core */,
+				DE50E56822168DD10059FB31 /* UIKit */,
 			);
 			path = i3designKitTests;
 			sourceTree = "<group>";
@@ -360,7 +397,6 @@
 				DE90D28B22152EC2006F6552 /* NumberFormatter+NumberStyleTests.swift in Sources */,
 				DE50E55B221654570059FB31 /* URLComponentsTests.swift in Sources */,
 				DE50E55D22165B290059FB31 /* UIColor+initializerTests.swift in Sources */,
-				DE9DFD382213B0BC00A94968 /* i3DesignKitTests.swift in Sources */,
 				DE50E5592216528F0059FB31 /* TimeZoneTests.swift in Sources */,
 				DE90D28722152CF4006F6552 /* CalendarTests.swift in Sources */,
 				DE90D28922152D68006F6552 /* NSObject+ClassNameTests.swift in Sources */,
