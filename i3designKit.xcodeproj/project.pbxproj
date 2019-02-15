@@ -12,6 +12,7 @@
 		DE50E55B221654570059FB31 /* URLComponentsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE50E55A221654570059FB31 /* URLComponentsTests.swift */; };
 		DE50E55D22165B290059FB31 /* UIColor+initializerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE50E55C22165B290059FB31 /* UIColor+initializerTests.swift */; };
 		DE50E55F221660070059FB31 /* Storyboardable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE50E55E221660070059FB31 /* Storyboardable.swift */; };
+		DE50E56322166AF20059FB31 /* PromiseKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE50E56222166AF20059FB31 /* PromiseKit.framework */; };
 		DE90D27B22150261006F6552 /* Sequence+EquatableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE90D27A22150261006F6552 /* Sequence+EquatableTests.swift */; };
 		DE90D27D2215044D006F6552 /* Array+EqutableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE90D27C2215044D006F6552 /* Array+EqutableTests.swift */; };
 		DE90D27F22150F48006F6552 /* DateFormatterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE90D27E22150F48006F6552 /* DateFormatterTests.swift */; };
@@ -61,6 +62,7 @@
 		DE50E55A221654570059FB31 /* URLComponentsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLComponentsTests.swift; sourceTree = "<group>"; };
 		DE50E55C22165B290059FB31 /* UIColor+initializerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+initializerTests.swift"; sourceTree = "<group>"; };
 		DE50E55E221660070059FB31 /* Storyboardable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboardable.swift; sourceTree = "<group>"; };
+		DE50E56222166AF20059FB31 /* PromiseKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PromiseKit.framework; path = Carthage/Build/iOS/PromiseKit.framework; sourceTree = "<group>"; };
 		DE90D27A22150261006F6552 /* Sequence+EquatableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sequence+EquatableTests.swift"; sourceTree = "<group>"; };
 		DE90D27C2215044D006F6552 /* Array+EqutableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+EqutableTests.swift"; sourceTree = "<group>"; };
 		DE90D27E22150F48006F6552 /* DateFormatterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatterTests.swift; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE50E56322166AF20059FB31 /* PromiseKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -116,12 +119,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DE50E56122166AF10059FB31 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DE50E56222166AF20059FB31 /* PromiseKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		DE9DFD1F2213B0BB00A94968 = {
 			isa = PBXGroup;
 			children = (
 				DE9DFD2B2213B0BB00A94968 /* i3designKit */,
 				DE9DFD362213B0BB00A94968 /* i3designKitTests */,
 				DE9DFD2A2213B0BB00A94968 /* Products */,
+				DE50E56122166AF10059FB31 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -207,6 +219,7 @@
 				DE9DFD252213B0BB00A94968 /* Sources */,
 				DE9DFD262213B0BB00A94968 /* Frameworks */,
 				DE9DFD272213B0BB00A94968 /* Resources */,
+				DE50E56022166A200059FB31 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -288,6 +301,28 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		DE50E56022166A200059FB31 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/PromiseKit.framework",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/PromiseKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DE9DFD252213B0BB00A94968 /* Sources */ = {
@@ -481,6 +516,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = i3designKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -507,6 +546,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = i3designKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
