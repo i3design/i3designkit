@@ -9,8 +9,8 @@
 import PromiseKit
 
 /// Type Erasure for ReadableRepository
-struct AnyReadableRepository<E>: ReadableRepository {
-    typealias Element = E
+public struct AnyReadableRepository<E>: ReadableRepository {
+    public typealias Element = E
     
     private let _element: (String) -> Promise<Element>
     private let _elements: () -> Promise<[Element]>
@@ -20,11 +20,11 @@ struct AnyReadableRepository<E>: ReadableRepository {
         _elements = repository.elements
     }
     
-    func element(key: String) -> Promise<Element> {
+    public func element(key: String) -> Promise<Element> {
         return _element(key)
     }
     
-    func elements() -> Promise<[Element]> {
+    public func elements() -> Promise<[Element]> {
         return _elements()
     }
 }

@@ -8,7 +8,7 @@
 
 import PromiseKit
 
-protocol EditableRepository {
+public protocol EditableRepository {
     
     associatedtype Element
     
@@ -36,5 +36,5 @@ protocol EditableRepository {
     func removeAll() -> Promise<Void>
 }
 
-typealias RepositoryRE = ReadableRepository & EditableRepository
-typealias RepositoryREW = ReadableRepository & WritableRepository & EditableRepository
+public typealias RepositoryRE = ReadableRepository & EditableRepository
+public typealias RepositoryREW = ReadableRepository & WritableRepository & EditableRepository

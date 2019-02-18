@@ -9,8 +9,8 @@
 import PromiseKit
 
 /// Type Erasure for RepositoryRE
-struct AnyRepositoryRE<E>: RepositoryRE {
-    typealias Element = E
+public struct AnyRepositoryRE<E>: RepositoryRE {
+    public typealias Element = E
     
     private let _element: (String) -> Promise<Element>
     private let _elements: () -> Promise<[Element]>
@@ -28,27 +28,27 @@ struct AnyRepositoryRE<E>: RepositoryRE {
         _removeAll = repository.removeAll
     }
     
-    func element(key: String) -> Promise<Element> {
+    public func element(key: String) -> Promise<Element> {
         return _element(key)
     }
     
-    func elements() -> Promise<[Element]> {
+    public func elements() -> Promise<[Element]> {
         return _elements()
     }
     
-    func add(_ element: Element) -> Promise<Void> {
+    public func add(_ element: Element) -> Promise<Void> {
         return _add(element)
     }
     
-    func update(_ element: Element) -> Promise<Void> {
+    public func update(_ element: Element) -> Promise<Void> {
         return _update(element)
     }
     
-    func remove(key: String) -> Promise<Void> {
+    public func remove(key: String) -> Promise<Void> {
         return _remove(key)
     }
     
-    func removeAll() -> Promise<Void> {
+    public func removeAll() -> Promise<Void> {
         return _removeAll()
     }
 }

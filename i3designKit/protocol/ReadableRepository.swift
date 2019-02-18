@@ -8,7 +8,7 @@
 
 import PromiseKit
 
-protocol ReadableRepository {
+public protocol ReadableRepository {
     
     associatedtype Element
     

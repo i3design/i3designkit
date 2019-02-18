@@ -8,7 +8,7 @@
 
 import PromiseKit
 
-protocol WritableRepository {
+public protocol WritableRepository {
     
     associatedtype Element
     
@@ -19,4 +19,4 @@ protocol WritableRepository {
     func set(_: [Element]) -> Promise<Void>
 }
 
-typealias RepositoryRW = ReadableRepository & WritableRepository
+public typealias RepositoryRW = ReadableRepository & WritableRepository
