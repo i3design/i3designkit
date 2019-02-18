@@ -9,10 +9,12 @@
 import Foundation
 
 extension NSObject {
+    /// クラス名を文字列で取得
     public static var className: String {
         return String(describing: self)
     }
     
+    /// クラス名を文字列で取得
     public var className: String {
         return type(of: self).className
     }

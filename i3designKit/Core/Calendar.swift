@@ -9,14 +9,18 @@
 import Foundation
 
 extension Calendar {
+    
+    /// Calendar.identifier == .gregorian のインスタンスを取得
     public static var gregorian: Calendar {
         return Calendar(identifier: .gregorian)
     }
     
+    /// Calendar.identifier == .japanese のインスタンスを取得
     public static var japanese: Calendar {
         return Calendar(identifier: .japanese)
     }
     
+    /// Calendar.identifier == .iso8601 のインスタンスを取得
     public static var iso8601: Calendar {
         return Calendar(identifier: .iso8601)
     }

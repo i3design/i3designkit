@@ -10,6 +10,13 @@ import Foundation
 
 extension NumberFormatter {
     
+    /// NSNumber を style と locale を指定して文字列に変換
+    ///
+    /// - Parameters:
+    ///   - number: 入力値
+    ///   - style: NumberFormatter.Style
+    ///   - locale: Locale
+    /// - Returns: 変換された文字列
     public class func string(from number: NSNumber, style: NumberFormatter.Style, locale: Locale) -> String? {
         let formatter = NumberFormatter()
         formatter.numberStyle = style
@@ -17,12 +24,14 @@ extension NumberFormatter {
         return formatter.string(from: number)
     }
     
-    /// "¥1,234" の書式で取得
+    /// 日本円の書式に変換された文字列を取得
+    /// - Convert 1234 to "¥1,234"
     public class func jpyString(from value: Int) -> String? {
         return string(from: NSNumber(value: value), style: .currency, locale: .ja_JP)
     }
     
-    /// "1,234" の書式で取得
+    /// ３桁区切りの文字列を取得
+    /// - Convert 1234 to "1,234"
     public class func decimalString(from value: Int) -> String? {
         return string(from: NSNumber(value: value), style: .decimal, locale: .ja_JP)
     }
