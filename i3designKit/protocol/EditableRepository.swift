@@ -37,4 +37,4 @@ protocol EditableRepository {
 }
 
 typealias RepositoryRE = ReadableRepository & EditableRepository
-typealias RepositoryRWE = ReadableRepository & WritableRepository & EditableRepository
+typealias RepositoryREW = ReadableRepository & WritableRepository & EditableRepository

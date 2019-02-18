@@ -1,5 +1,5 @@
 //
-//  AnyRepositoryRWE.swift
+//  AnyRepositoryREW.swift
 //  i3designKit
 //
 //  Created by Takuto Nagano on 2019/02/15.
@@ -9,7 +9,7 @@
 import PromiseKit
 
 /// Type Erasure for RepositoryRWE
-struct AnyRepositoryRWE<E>: RepositoryRWE {
+struct AnyRepositoryREW<E>: RepositoryREW {
     typealias Element = E
     
     private let _element: (String) -> Promise<Element>
@@ -20,7 +20,7 @@ struct AnyRepositoryRWE<E>: RepositoryRWE {
     private let _remove: (String) -> Promise<Void>
     private let _removeAll: () -> Promise<Void>
     
-    init<R: RepositoryRWE>(_ repository: R) where R.Element == E {
+    init<R: RepositoryREW>(_ repository: R) where R.Element == E {
         _element = repository.element
         _elements = repository.elements
         _set = repository.set

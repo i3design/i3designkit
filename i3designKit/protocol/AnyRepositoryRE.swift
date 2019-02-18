@@ -19,7 +19,7 @@ struct AnyRepositoryRE<E>: RepositoryRE {
     private let _remove: (String) -> Promise<Void>
     private let _removeAll: () -> Promise<Void>
     
-    init<R: RepositoryRWE>(_ repository: R) where R.Element == E {
+    init<R: RepositoryRE>(_ repository: R) where R.Element == E {
         _element = repository.element
         _elements = repository.elements
         _add = repository.add

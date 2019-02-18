@@ -8,13 +8,6 @@
 
 import PromiseKit
 
-enum RepositoryError: Error {
-    /// 未定義
-    case notDefined
-    /// データ不正
-    case dataIllegal(String)
-}
-
 protocol ReadableRepository {
     
     associatedtype Element

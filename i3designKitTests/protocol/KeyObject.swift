@@ -10,10 +10,16 @@ import Foundation
 
 struct KeyObject {
     let key: String
+    var value: String = ""
+    
+    init(key: String, value: String = "") {
+        self.key = key
+        self.value = value
+    }
 }
 
 extension KeyObject: Equatable {
     static func == (lhs: KeyObject, rhs: KeyObject) -> Bool {
-        return lhs.key == rhs.key
+        return lhs.key == rhs.key && lhs.value == rhs.value
     }
 }

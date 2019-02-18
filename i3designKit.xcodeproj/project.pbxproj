@@ -21,10 +21,13 @@
 		DE50E56C22168F050059FB31 /* AnyReadableRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE50E56B22168F050059FB31 /* AnyReadableRepository.swift */; };
 		DE50E56E22168F290059FB31 /* AnyRepositoryRW.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE50E56D22168F290059FB31 /* AnyRepositoryRW.swift */; };
 		DE50E57022168F650059FB31 /* AnyRepositoryRE.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE50E56F22168F650059FB31 /* AnyRepositoryRE.swift */; };
-		DE50E57222168F8E0059FB31 /* AnyRepositoryRWE.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE50E57122168F8E0059FB31 /* AnyRepositoryRWE.swift */; };
+		DE50E57222168F8E0059FB31 /* AnyRepositoryREW.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE50E57122168F8E0059FB31 /* AnyRepositoryREW.swift */; };
 		DE50E57422168FF10059FB31 /* WritableRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE50E57322168FF10059FB31 /* WritableRepository.swift */; };
 		DE50E5762216900D0059FB31 /* EditableRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE50E5752216900D0059FB31 /* EditableRepository.swift */; };
 		DE50E5782216A2D90059FB31 /* PromiseKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE50E56222166AF20059FB31 /* PromiseKit.framework */; };
+		DE79466A221A476E009AD45D /* AnyRepositoryRETests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE794669221A476E009AD45D /* AnyRepositoryRETests.swift */; };
+		DE79466C221A51D2009AD45D /* AnyRepositoryREWTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE79466B221A51D2009AD45D /* AnyRepositoryREWTests.swift */; };
+		DE79466E221A5540009AD45D /* RepositoryError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE79466D221A5540009AD45D /* RepositoryError.swift */; };
 		DE90D27B22150261006F6552 /* Sequence+EquatableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE90D27A22150261006F6552 /* Sequence+EquatableTests.swift */; };
 		DE90D27D2215044D006F6552 /* Array+EqutableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE90D27C2215044D006F6552 /* Array+EqutableTests.swift */; };
 		DE90D27F22150F48006F6552 /* DateFormatterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE90D27E22150F48006F6552 /* DateFormatterTests.swift */; };
@@ -94,9 +97,12 @@
 		DE50E56B22168F050059FB31 /* AnyReadableRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyReadableRepository.swift; sourceTree = "<group>"; };
 		DE50E56D22168F290059FB31 /* AnyRepositoryRW.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyRepositoryRW.swift; sourceTree = "<group>"; };
 		DE50E56F22168F650059FB31 /* AnyRepositoryRE.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyRepositoryRE.swift; sourceTree = "<group>"; };
-		DE50E57122168F8E0059FB31 /* AnyRepositoryRWE.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyRepositoryRWE.swift; sourceTree = "<group>"; };
+		DE50E57122168F8E0059FB31 /* AnyRepositoryREW.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyRepositoryREW.swift; sourceTree = "<group>"; };
 		DE50E57322168FF10059FB31 /* WritableRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WritableRepository.swift; sourceTree = "<group>"; };
 		DE50E5752216900D0059FB31 /* EditableRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditableRepository.swift; sourceTree = "<group>"; };
+		DE794669221A476E009AD45D /* AnyRepositoryRETests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyRepositoryRETests.swift; sourceTree = "<group>"; };
+		DE79466B221A51D2009AD45D /* AnyRepositoryREWTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyRepositoryREWTests.swift; sourceTree = "<group>"; };
+		DE79466D221A5540009AD45D /* RepositoryError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryError.swift; sourceTree = "<group>"; };
 		DE90D27A22150261006F6552 /* Sequence+EquatableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sequence+EquatableTests.swift"; sourceTree = "<group>"; };
 		DE90D27C2215044D006F6552 /* Array+EqutableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+EqutableTests.swift"; sourceTree = "<group>"; };
 		DE90D27E22150F48006F6552 /* DateFormatterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatterTests.swift; sourceTree = "<group>"; };
@@ -157,6 +163,8 @@
 			isa = PBXGroup;
 			children = (
 				DE2A440C2216A9F100474C3D /* AnyReadableRepositoryTests.swift */,
+				DE794669221A476E009AD45D /* AnyRepositoryRETests.swift */,
+				DE79466B221A51D2009AD45D /* AnyRepositoryREWTests.swift */,
 				DE2A440E2216AD0400474C3D /* AnyRepositoryRWTests.swift */,
 				DE2A44102216BA9900474C3D /* KeyObject.swift */,
 			);
@@ -176,11 +184,12 @@
 			children = (
 				DE50E56B22168F050059FB31 /* AnyReadableRepository.swift */,
 				DE50E56F22168F650059FB31 /* AnyRepositoryRE.swift */,
+				DE50E57122168F8E0059FB31 /* AnyRepositoryREW.swift */,
 				DE50E56D22168F290059FB31 /* AnyRepositoryRW.swift */,
-				DE50E57122168F8E0059FB31 /* AnyRepositoryRWE.swift */,
 				DE50E5752216900D0059FB31 /* EditableRepository.swift */,
 				DE9DFD452213B10300A94968 /* Injectable.swift */,
 				DE50E56922168E680059FB31 /* ReadableRepository.swift */,
+				DE79466D221A5540009AD45D /* RepositoryError.swift */,
 				DE50E55E221660070059FB31 /* Storyboardable.swift */,
 				DE50E57322168FF10059FB31 /* WritableRepository.swift */,
 			);
@@ -437,7 +446,7 @@
 				DE9DFD5A2213B10400A94968 /* NumberFormatter+NumberStyle.swift in Sources */,
 				DE9DFD5E2213B10400A94968 /* URLComponents.swift in Sources */,
 				DE9DFD662213B10400A94968 /* Locale.swift in Sources */,
-				DE50E57222168F8E0059FB31 /* AnyRepositoryRWE.swift in Sources */,
+				DE50E57222168F8E0059FB31 /* AnyRepositoryREW.swift in Sources */,
 				DE9DFD642213B10400A94968 /* Sequence+Equatable.swift in Sources */,
 				DE9DFD652213B10400A94968 /* JSONDecoder+String.swift in Sources */,
 				DE50E56C22168F050059FB31 /* AnyReadableRepository.swift in Sources */,
@@ -447,6 +456,7 @@
 				DE50E5762216900D0059FB31 /* EditableRepository.swift in Sources */,
 				DE9DFD632213B10400A94968 /* XibView.swift in Sources */,
 				DE9DFD622213B10400A94968 /* NSObject+ClassName.swift in Sources */,
+				DE79466E221A5540009AD45D /* RepositoryError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -465,6 +475,8 @@
 				DE90D28922152D68006F6552 /* NSObject+ClassNameTests.swift in Sources */,
 				DE90D27B22150261006F6552 /* Sequence+EquatableTests.swift in Sources */,
 				DE2A440F2216AD0400474C3D /* AnyRepositoryRWTests.swift in Sources */,
+				DE79466C221A51D2009AD45D /* AnyRepositoryREWTests.swift in Sources */,
+				DE79466A221A476E009AD45D /* AnyRepositoryRETests.swift in Sources */,
 				DE90D27D2215044D006F6552 /* Array+EqutableTests.swift in Sources */,
 				DE90D28322152987006F6552 /* JSONDecoder+StringTests.swift in Sources */,
 				DE2A440D2216A9F100474C3D /* AnyReadableRepositoryTests.swift in Sources */,
