@@ -1,4 +1,5 @@
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://git.i3design.com/i3design-jp/i3designkit)
+![badge-platforms](https://img.shields.io/badge/platforms-iOS-lightgrey.svg)
 
 i3designKit is common library for internal use written in Swift.
 
@@ -24,10 +25,10 @@ $ brew update
 $ brew install carthage
 ```
 
-To integrate Alamofire into your Xcode project using Carthage, specify it in your `Cartfile`:
+To integrate i3designKit into your Xcode project using Carthage, specify it in your `Cartfile`:
 
 ```ogdl
 git "https://git.i3design.com/i3design-jp/i3designkit.git"
 ```
 
-Run `carthage update` to build the framework and drag the built `Alamofire.framework` into your Xcode project.
+Run `carthage update --platform iOS` to build the framework and drag the built `i3designKit.framework` into your Xcode project.
