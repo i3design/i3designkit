@@ -1,7 +1,7 @@
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://git.i3design.com/i3design-jp/i3designkit)
 [![badge-platforms](https://img.shields.io/badge/platforms-iOS-lightgrey.svg)](https://git.i3design.com/i3design-jp/i3designkit)
 
-i3designKit is common library for internal use written in Swift.
+i3designKit is a common internal library written in Swift.
 
 # i3designKit 1.0 Released
 i3designKit 1.0 has been released;
