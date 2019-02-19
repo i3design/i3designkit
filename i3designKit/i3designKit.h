@@ -3,7 +3,7 @@
 //  i3designKit
 //
 //  Created by Takuto Nagano on 2019/02/13.
-//  Copyright © 2019 i3design. All rights reserved.
+//  Copyright © 2019 i3DESIGN. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

@@ -3,12 +3,12 @@
 //  i3designKit
 //
 //  Created by Takuto Nagano on 2019/02/15.
-//  Copyright © 2019 i3design. All rights reserved.
+//  Copyright © 2019 i3DESIGN. All rights reserved.
 //
 
 import PromiseKit
 
-/// Type Erasure for RepositoryRWE
+/// Type Erasure for ReadableRepository & WritableRepository & EditableRepository
 public struct AnyRepositoryREW<E>: RepositoryREW {
     public typealias Element = E
     

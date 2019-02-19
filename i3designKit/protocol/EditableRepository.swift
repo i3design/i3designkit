@@ -3,11 +3,12 @@
 //  i3designKit
 //
 //  Created by Takuto Nagano on 2019/02/15.
-//  Copyright © 2019 i3design. All rights reserved.
+//  Copyright © 2019 i3DESIGN. All rights reserved.
 //
 
 import PromiseKit
 
+/// 編集機能をもったリポジトリパターン用プロトコル
 public protocol EditableRepository {
     
     associatedtype Element

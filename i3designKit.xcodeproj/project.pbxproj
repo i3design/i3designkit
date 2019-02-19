@@ -47,7 +47,7 @@
 		DE9DFD592213B10400A94968 /* Either.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9DFD472213B10300A94968 /* Either.swift */; };
 		DE9DFD5A2213B10400A94968 /* NumberFormatter+NumberStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9DFD482213B10300A94968 /* NumberFormatter+NumberStyle.swift */; };
 		DE9DFD5B2213B10400A94968 /* Array+Equtable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9DFD492213B10300A94968 /* Array+Equtable.swift */; };
-		DE9DFD5C2213B10400A94968 /* UIApplication+OpenURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9DFD4A2213B10300A94968 /* UIApplication+OpenURL.swift */; };
+		DE9DFD5C2213B10400A94968 /* UIApplication+URLScheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9DFD4A2213B10300A94968 /* UIApplication+URLScheme.swift */; };
 		DE9DFD5D2213B10400A94968 /* UIColor+initializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9DFD4B2213B10300A94968 /* UIColor+initializer.swift */; };
 		DE9DFD5E2213B10400A94968 /* URLComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9DFD4C2213B10300A94968 /* URLComponents.swift */; };
 		DE9DFD5F2213B10400A94968 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9DFD4D2213B10300A94968 /* String.swift */; };
@@ -125,7 +125,7 @@
 		DE9DFD472213B10300A94968 /* Either.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Either.swift; sourceTree = "<group>"; };
 		DE9DFD482213B10300A94968 /* NumberFormatter+NumberStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NumberFormatter+NumberStyle.swift"; sourceTree = "<group>"; };
 		DE9DFD492213B10300A94968 /* Array+Equtable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Equtable.swift"; sourceTree = "<group>"; };
-		DE9DFD4A2213B10300A94968 /* UIApplication+OpenURL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIApplication+OpenURL.swift"; sourceTree = "<group>"; };
+		DE9DFD4A2213B10300A94968 /* UIApplication+URLScheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIApplication+URLScheme.swift"; sourceTree = "<group>"; };
 		DE9DFD4B2213B10300A94968 /* UIColor+initializer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+initializer.swift"; sourceTree = "<group>"; };
 		DE9DFD4C2213B10300A94968 /* URLComponents.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLComponents.swift; sourceTree = "<group>"; };
 		DE9DFD4D2213B10300A94968 /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
@@ -219,7 +219,7 @@
 		DE50E56622168D430059FB31 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
-				DE9DFD4A2213B10300A94968 /* UIApplication+OpenURL.swift */,
+				DE9DFD4A2213B10300A94968 /* UIApplication+URLScheme.swift */,
 				DE9DFD4B2213B10300A94968 /* UIColor+initializer.swift */,
 				DE9DFD442213B10300A94968 /* UIImage.swift */,
 				DE9DFD512213B10400A94968 /* XibView.swift */,
@@ -357,7 +357,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1010;
 				LastUpgradeCheck = 1010;
-				ORGANIZATIONNAME = i3design;
+				ORGANIZATIONNAME = i3DESIGN;
 				TargetAttributes = {
 					DE9DFD282213B0BB00A94968 = {
 						CreatedOnToolsVersion = 10.1;
@@ -430,7 +430,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DE9DFD5C2213B10400A94968 /* UIApplication+OpenURL.swift in Sources */,
+				DE9DFD5C2213B10400A94968 /* UIApplication+URLScheme.swift in Sources */,
 				DE50E57022168F650059FB31 /* AnyRepositoryRE.swift in Sources */,
 				DE50E57422168FF10059FB31 /* WritableRepository.swift in Sources */,
 				DE9DFD5F2213B10400A94968 /* String.swift in Sources */,

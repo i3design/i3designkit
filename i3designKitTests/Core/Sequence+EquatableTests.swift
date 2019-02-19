@@ -3,7 +3,7 @@
 //  i3designKitTests
 //
 //  Created by Takuto Nagano on 2019/02/14.
-//  Copyright © 2019 i3design. All rights reserved.
+//  Copyright © 2019 i3DESIGN. All rights reserved.
 //
 
 import XCTest

@@ -3,7 +3,7 @@
 //  i3Design
 //
 //  Created by Takuto Nagano on 2019/02/08.
-//  Copyright © 2019 i3Design. All rights reserved.
+//  Copyright © 2019 i3DESIGN. All rights reserved.
 //
 
 import UIKit
