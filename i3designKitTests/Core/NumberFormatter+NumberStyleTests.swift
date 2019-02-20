@@ -18,10 +18,16 @@ class NumberFormatter_NumberStyleTests: XCTestCase {
     }
 
     func test_jpyString() {
-        XCTAssertEqual("¥1,234", NumberFormatter.jpyString(from: 1234))
+        XCTAssertEqual("¥100", NumberFormatter.jpyString(from: 100))
+        XCTAssertEqual("¥1,000", NumberFormatter.jpyString(from: 1000))
+        XCTAssertEqual("-¥100", NumberFormatter.jpyString(from: -100))
+        XCTAssertEqual("-¥1,000", NumberFormatter.jpyString(from: -1000))
     }
     
     func test_decimalString() {
-        XCTAssertEqual("1,234", NumberFormatter.decimalString(from: 1234))
+        XCTAssertEqual("100", NumberFormatter.jpyString(from: 100))
+        XCTAssertEqual("1,000", NumberFormatter.jpyString(from: 1000))
+        XCTAssertEqual("-100", NumberFormatter.jpyString(from: -100))
+        XCTAssertEqual("-1,000", NumberFormatter.jpyString(from: -1000))
     }
 }
