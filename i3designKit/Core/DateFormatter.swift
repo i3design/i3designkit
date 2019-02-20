@@ -17,11 +17,11 @@ extension DateFormatter {
     ///   - format: 文字列のフォーマット. ex) "yyyyMMdd"
     ///   - calendar: Calendar. defaultはグレゴリオ暦.
     /// - Returns: 変換したDate型. 変換に失敗した場合はnilを返す.
-    public static func date(from string: String, format: String, calendar: Calendar = .gregorian) -> Date? {
+    public static func date(from dateString: String, format: String, calendar: Calendar = .gregorian) -> Date? {
         let formatter = DateFormatter()
         formatter.dateFormat = format
         formatter.calendar = calendar
-        return formatter.date(from: string)
+        return formatter.date(from: dateString)
     }
     
     /// Date型をString型に変換する
@@ -31,9 +31,9 @@ extension DateFormatter {
     ///   - format: 変換したい文字列のフォーマット. ex) "yyyyMMdd"
     ///   - calender: Calender. defaultはグレゴリオ暦.
     /// - Returns: 変換された文字列. 失敗した場合はnilを返す.
-    public static func string(from date: Date, format: String, calender: Calendar = .gregorian) -> String? {
+    public static func string(from date: Date, format: String, calendar: Calendar = .gregorian) -> String? {
         let formatter = DateFormatter()
-        formatter.calendar = calender
+        formatter.calendar = calendar
         formatter.dateFormat = format
         return formatter.string(from: date)
     }
