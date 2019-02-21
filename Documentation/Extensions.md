@@ -263,7 +263,6 @@ var className: String { get }
 class MyObject: NSObject {}
 MyObject().className // => "MyObject" 
 ```
---- 
 
 ## NumberFormatter
 ### string(from:style:locale:) -> String?
@@ -304,7 +303,7 @@ NumberFormatter.jpyString(from: 1000) // => "¥1,000"
 NumberFormatter.jpyString(from: -100) // => "-¥100"
 NumberFormatter.jpyString(from: -1000) // => "-¥1,000"
 ```
-
+---
 ### decimalString(from:) -> String?
 ３桁区切りの文字列を取得
 
@@ -323,7 +322,6 @@ NumberFormatter.jpyString(from: 1000) // => "1,000"
 NumberFormatter.jpyString(from: -100) // => "-100"
 NumberFormatter.jpyString(from: -1000) // => "-1,000"
 ```
-
 
 ## Sequence
 ### decodes\<T>(_:decoder:) throws -> [T]
@@ -427,7 +425,6 @@ catch {
     // error handling
 }
 ```
-
 ---
 ### unique
 重複した要素のない配列を取得
@@ -531,3 +528,121 @@ func queryValue(for name: String) -> String?
 let components = URLComponents(string: "https://example.co.jp/index?q1=v1&q2=v2")
 components?.queryValue(for: q1) // => Optional("v1")
 ```
+
+## UIColor
+### init(hex:alpha:)
+16進数のRGBカラーコードからUIColorを作成
+
+##### Declaration
+```swfit
+init(hex: Int, alpha: CGFloat = 1.0)
+```
+
+##### Parameters
+- hex: 16進数のRGBカラーコード
+- alpha: 透過値(0.0 - 1.0). 1.0は透過なし. default is 1.0.
+
+##### Discussion
+```swfit
+let red = UIColor(hex: 0xFF0000)
+let green = UIColor(hex: 0x00FF00)
+let blue = UIColor(hex: 0x0000FF)
+let white = UIColor(hex: 0xFFFFFF)
+let black = UIColor(hex: 0x000000)
+```
+---
+### init(cyan:magenta:yellow:black:alpha:)
+CMYKによるUIColorの生成
+
+##### Declaration
+```swift
+init(cyan: CGFloat, magenta: CGFloat, yellow: CGFloat, black: CGFloat, alpha: CGFloat = 1.0)
+```
+
+##### Parameters
+- cyan: シアン(0.0-1.0)
+- magenta: マゼンダ(0.0-1.0)
+- yellow: イエロー(0.0-1.0)
+- black: ブラック(0.0-1.0)
+- alpha: 透過値(0.0 - 1.0). 1.0は透過なし. default is 1.0.
+
+##### Discussion
+```swift
+let color = UIColor(cyan: 1.0, magenta: 1.0, yellow:1.0, black:1.0, alpha: 0.5)
+```
+
+## UIImage
+### resize(to:) -> UIImage?
+指定された`CGSize`にリサイズした`UIImage`を取得
+
+##### Declaration
+```swift
+func resize(to toSize: CGSize) -> UIImage?
+```
+
+##### Parameters
+- toSize: リサイズ後の`CGSize`
+
+##### Discussion
+```swift
+let image = UIImage(named: "100x100")
+let resized = image.resize(to: CGSize(width: 50, height: 50))
+```
+---
+### createImageWith(color:size:) -> UIImage?
+指定色で塗りつぶしたUIImageを取得
+
+##### Declaration
+```swift
+static func createImageWith(color: UIColor, size: CGSize) -> UIImage?
+```
+##### Parameters
+- color: 塗りつぶす色を`UIColor`で指定
+- size: 取得したい`UIImage`のsizeを`CGSize`で指定
+
+##### Discussion
+```swift
+let size = CGSize(width: 50, height: 50)
+let image = UIImage.createImageWith(color: UIColor.red, size: size)
+// 50×50の赤いUIImageを取得できる
+```
+
+## UIApplication
+### func open(scheme:options:completionHandler:)
+
+##### Declaration
+```swift
+func open(scheme: URLScheme, options: [UIApplication.OpenExternalURLOptionsKey : Any] = [:], completionHandler completion: ((Bool) -> Void)? = nil)
+```
+
+##### Parameters
+- scheme: `URLScheme`を指定
+- options: URLを開くときに使用するオプションの辞書。 この辞書に含めることができるキーのリストについては、URLオプションを参照してください。
+- completion:結果とともに実行するブロック。 URLを開くことの成功または失敗を知らせたい場合は、このパラメーターに値を指定してください。 このブロックはアプリのメインスレッドで非同期に実行されます。 ブロックは戻り値を持たず、以下のパラメータを取ります。- success：URLが正常に開かれたかどうかを示すブール値。
+
+##### Discussion
+```swift
+UIApplication.shared.open(scheme: .appSettings) { result in
+    // handle completion
+}
+```
+
+### URLScheme
+`func open(scheme:options:completionHandler:)`で指定するenum.
+##### Declaration
+```swift
+public enum URLScheme {
+    case url(string: String)
+    case tel(number: String)
+    case telprompt(number: String)
+    case settings
+    case appSettings
+}
+```
+
+##### cases
+- url(string:): URLを文字列で指定する
+- tel(number:): 確認アラートなしで電話発信を行う. iOS12から確認アラートが表示される.
+- telprompt(number:): 確認アラートありで電話発信を行う.
+- settings: 設定アプリを起動する
+- appSettings: 設定アプリ内の自身のアプリランチャー画面を起動する. 通知のOn/Off, Appのバックグラウンド更新などを設定できる.

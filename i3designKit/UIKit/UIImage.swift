@@ -33,7 +33,7 @@ extension UIImage {
     ///   - color: 塗り潰す色
     ///   - rect: UIImageのサイズ
     /// - Returns: UIImage
-    public class func createImageWith(color: UIColor, size: CGSize) -> UIImage? {
+    public static func createImageWith(color: UIColor, size: CGSize) -> UIImage? {
         defer {
             UIGraphicsEndImageContext()
         }
