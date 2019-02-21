@@ -46,7 +46,7 @@ print(object.say) // => "Hello"
 protocol Storyboardable
 ```
 
-### Interface Propaties
+### Interface Properties
 ```swift
 var name: String { get }
 ```
@@ -91,7 +91,7 @@ protocol ReadableRepository
 assosiatedType Element
 ```
 
-### Interface funcsions
+### Interface Functions
 ```swift
 func element(key: String) -> Promise<Element>
 ```
@@ -115,7 +115,7 @@ protocol WritableRepository
 assosiatedType Element
 ```
 
-### Interface funcsions
+### Interface Functions
 ```swift
 func set(_: [Element]) -> Promise<Void>
 ```
@@ -134,7 +134,7 @@ protocol EditableRepository
 assosiatedType Element
 ```
 
-### Interface funcsions
+### Interface Functions
 ```swift
 func add(_: Element) -> Promise<Void>
 ``` 
