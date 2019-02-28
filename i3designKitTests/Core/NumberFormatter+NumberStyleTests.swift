@@ -25,9 +25,9 @@ class NumberFormatter_NumberStyleTests: XCTestCase {
     }
     
     func test_decimalString() {
-        XCTAssertEqual("100", NumberFormatter.jpyString(from: 100))
-        XCTAssertEqual("1,000", NumberFormatter.jpyString(from: 1000))
-        XCTAssertEqual("-100", NumberFormatter.jpyString(from: -100))
-        XCTAssertEqual("-1,000", NumberFormatter.jpyString(from: -1000))
+        XCTAssertEqual("100", NumberFormatter.decimalString(from: 100))
+        XCTAssertEqual("1,000", NumberFormatter.decimalString(from: 1000))
+        XCTAssertEqual("-100", NumberFormatter.decimalString(from: -100))
+        XCTAssertEqual("-1,000", NumberFormatter.decimalString(from: -1000))
     }
 }
