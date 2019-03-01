@@ -58,12 +58,21 @@ extension UIApplication {
     ///   - options: A dictionary of options to use when opening the URL. For a list of possible keys to include in this dictionary, see URL Options.
     ///   - completion: The block to execute with the results. Provide a value for this parameter if you want to be informed of the success or failure of opening the URL. This block is executed asynchronously on your app's main thread. The block has no return value and takes the following parameter:
     ///     - success: A Boolean indicating whether the URL was opened successfully.
+    @available(iOS 10.0, *)
     public func open(scheme: URLScheme, options: [UIApplication.OpenExternalURLOptionsKey : Any] = [:], completionHandler completion: ((Bool) -> Void)? = nil) {
         guard let url = scheme.url else {
             completion?(false)
             return
         }
         open(url, options: options, completionHandler: completion)
+    }
+    
+    @available(iOS, introduced: 2.0, deprecated: 10.0, message: "Please use open:scheme:options:completionHandler: instead")
+    public func openURL(scheme: URLScheme) -> Bool {
+        guard let url = scheme.url else {
+            return false
+        }
+        return openURL(url)
     }
 }
 
