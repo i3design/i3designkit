@@ -10,7 +10,7 @@ i3designKit 1.0 has been released;
 
 ## Requirements
 
-- iOS 11.0+ / macOS 10.14+
+- iOS 9.0+ / macOS 10.14+
 - Xcode 10.1+
 - Swift 4.2+
 
