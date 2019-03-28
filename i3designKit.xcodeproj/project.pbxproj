@@ -363,10 +363,11 @@
 				TargetAttributes = {
 					DE9DFD282213B0BB00A94968 = {
 						CreatedOnToolsVersion = 10.1;
-						LastSwiftMigration = 1010;
+						LastSwiftMigration = 1020;
 					};
 					DE9DFD312213B0BB00A94968 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
@@ -376,6 +377,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = DE9DFD1F2213B0BB00A94968;
 			productRefGroup = DE9DFD2A2213B0BB00A94968 /* Products */;
