@@ -8,7 +8,6 @@
 
 import Foundation
 
-
 /// リポジトリエラー
 public enum RepositoryError: Error {
     /// 未定義

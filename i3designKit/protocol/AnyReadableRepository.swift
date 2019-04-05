@@ -15,7 +15,7 @@ public struct AnyReadableRepository<E>: ReadableRepository {
     private let _element: (String) -> Promise<Element>
     private let _elements: () -> Promise<[Element]>
     
-    init<R: ReadableRepository>(_ repository: R) where R.Element == E {
+    public init<R: ReadableRepository>(_ repository: R) where R.Element == E {
         _element = repository.element
         _elements = repository.elements
     }

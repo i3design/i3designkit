@@ -16,7 +16,7 @@ public struct AnyRepositoryRW<E>: RepositoryRW {
     private let _elements: () -> Promise<[Element]>
     private let _set: ([Element]) -> Promise<Void>
     
-    init<R: RepositoryRW>(_ repository: R) where R.Element == E {
+    public init<R: RepositoryRW>(_ repository: R) where R.Element == E {
         _element = repository.element
         _elements = repository.elements
         _set = repository.set
