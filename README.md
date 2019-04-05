@@ -5,8 +5,11 @@
 
 i3designKit is a common internal library written in Swift.
 
-# i3designKit 1.0 Released
-i3designKit 1.0 has been released;
+# i3designKit 1.3 Released
+i3designKit 1.3 has been released;
+- fix access controll
+- support for iOS 9.0+
+- Add explicit support for Xcode 10.2 / Swift 4.2.
 
 ## Requirements
 
