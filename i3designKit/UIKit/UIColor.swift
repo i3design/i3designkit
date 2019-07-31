@@ -37,3 +37,13 @@ extension UIColor {
         self.init(red: r, green: g, blue: b, alpha: alpha)
     }
 }
+
+public extension UIColor {
+    /// ランダム色
+    static var random: UIColor {
+        return UIColor(red: .random(in: 0...1),
+                       green: .random(in: 0...1),
+                       blue: .random(in: 0...1),
+                       alpha: 1.0)
+    }
+}

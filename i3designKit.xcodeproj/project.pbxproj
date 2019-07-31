@@ -49,7 +49,7 @@
 		DE9DFD5A2213B10400A94968 /* NumberFormatter+NumberStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9DFD482213B10300A94968 /* NumberFormatter+NumberStyle.swift */; };
 		DE9DFD5B2213B10400A94968 /* Array+Equtable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9DFD492213B10300A94968 /* Array+Equtable.swift */; };
 		DE9DFD5C2213B10400A94968 /* UIApplication+URLScheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9DFD4A2213B10300A94968 /* UIApplication+URLScheme.swift */; };
-		DE9DFD5D2213B10400A94968 /* UIColor+initializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9DFD4B2213B10300A94968 /* UIColor+initializer.swift */; };
+		DE9DFD5D2213B10400A94968 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9DFD4B2213B10300A94968 /* UIColor.swift */; };
 		DE9DFD5E2213B10400A94968 /* URLComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9DFD4C2213B10300A94968 /* URLComponents.swift */; };
 		DE9DFD5F2213B10400A94968 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9DFD4D2213B10300A94968 /* String.swift */; };
 		DE9DFD602213B10400A94968 /* Calendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9DFD4E2213B10400A94968 /* Calendar.swift */; };
@@ -128,7 +128,7 @@
 		DE9DFD482213B10300A94968 /* NumberFormatter+NumberStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NumberFormatter+NumberStyle.swift"; sourceTree = "<group>"; };
 		DE9DFD492213B10300A94968 /* Array+Equtable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Equtable.swift"; sourceTree = "<group>"; };
 		DE9DFD4A2213B10300A94968 /* UIApplication+URLScheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIApplication+URLScheme.swift"; sourceTree = "<group>"; };
-		DE9DFD4B2213B10300A94968 /* UIColor+initializer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+initializer.swift"; sourceTree = "<group>"; };
+		DE9DFD4B2213B10300A94968 /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		DE9DFD4C2213B10300A94968 /* URLComponents.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLComponents.swift; sourceTree = "<group>"; };
 		DE9DFD4D2213B10300A94968 /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		DE9DFD4E2213B10400A94968 /* Calendar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Calendar.swift; sourceTree = "<group>"; };
@@ -222,7 +222,7 @@
 			isa = PBXGroup;
 			children = (
 				DE9DFD4A2213B10300A94968 /* UIApplication+URLScheme.swift */,
-				DE9DFD4B2213B10300A94968 /* UIColor+initializer.swift */,
+				DE9DFD4B2213B10300A94968 /* UIColor.swift */,
 				DE9DFD442213B10300A94968 /* UIImage.swift */,
 				DE9DFD512213B10400A94968 /* XibView.swift */,
 			);
@@ -419,7 +419,7 @@
 				DE9DFD5F2213B10400A94968 /* String.swift in Sources */,
 				DE9DFD582213B10400A94968 /* DateFormatter.swift in Sources */,
 				DE50E55F221660070059FB31 /* Storyboardable.swift in Sources */,
-				DE9DFD5D2213B10400A94968 /* UIColor+initializer.swift in Sources */,
+				DE9DFD5D2213B10400A94968 /* UIColor.swift in Sources */,
 				DE50E56E22168F290059FB31 /* AnyRepositoryRW.swift in Sources */,
 				DE9DFD552213B10400A94968 /* TimeZone.swift in Sources */,
 				DE9DFD572213B10400A94968 /* Injectable.swift in Sources */,
