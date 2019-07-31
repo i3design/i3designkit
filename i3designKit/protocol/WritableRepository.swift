@@ -9,6 +9,7 @@
 import PromiseKit
 
 /// 書き込み機能をもったリポジトリパターン用プロトコル
+@available(*, deprecated, renamed: "Setable")
 public protocol WritableRepository {
     
     associatedtype Element
@@ -20,4 +21,5 @@ public protocol WritableRepository {
     func set(_: [Element]) -> Promise<Void>
 }
 
+@available(*, deprecated)
 public typealias RepositoryRW = ReadableRepository & WritableRepository

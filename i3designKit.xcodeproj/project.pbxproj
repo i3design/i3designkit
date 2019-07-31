@@ -61,6 +61,12 @@
 		DE9DFD662213B10400A94968 /* Locale.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9DFD542213B10400A94968 /* Locale.swift */; };
 		DEED417222F165EC002819F3 /* UICollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEED417122F165EC002819F3 /* UICollectionView.swift */; };
 		DEED417422F16670002819F3 /* UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEED417322F16670002819F3 /* UITableView.swift */; };
+		DEED417622F171FD002819F3 /* Readable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEED417522F171FD002819F3 /* Readable.swift */; };
+		DEED417822F17291002819F3 /* AnyReadableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEED417722F17291002819F3 /* AnyReadableTests.swift */; };
+		DEED417A22F17FAD002819F3 /* AnySettableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEED417922F17FAD002819F3 /* AnySettableTests.swift */; };
+		DEED417C22F17FE4002819F3 /* Settable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEED417B22F17FE4002819F3 /* Settable.swift */; };
+		DEED417E22F185EE002819F3 /* Deletable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEED417D22F185EE002819F3 /* Deletable.swift */; };
+		DEED418022F187F5002819F3 /* AnyDeletableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEED417F22F187F5002819F3 /* AnyDeletableTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -142,6 +148,12 @@
 		DE9DFD542213B10400A94968 /* Locale.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Locale.swift; sourceTree = "<group>"; };
 		DEED417122F165EC002819F3 /* UICollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionView.swift; sourceTree = "<group>"; };
 		DEED417322F16670002819F3 /* UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableView.swift; sourceTree = "<group>"; };
+		DEED417522F171FD002819F3 /* Readable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Readable.swift; sourceTree = "<group>"; };
+		DEED417722F17291002819F3 /* AnyReadableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyReadableTests.swift; sourceTree = "<group>"; };
+		DEED417922F17FAD002819F3 /* AnySettableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnySettableTests.swift; sourceTree = "<group>"; };
+		DEED417B22F17FE4002819F3 /* Settable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settable.swift; sourceTree = "<group>"; };
+		DEED417D22F185EE002819F3 /* Deletable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Deletable.swift; sourceTree = "<group>"; };
+		DEED417F22F187F5002819F3 /* AnyDeletableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AnyDeletableTests.swift; path = i3designKitTests/AnyDeletableTests.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,10 +180,13 @@
 		DE2A440B2216A9E000474C3D /* protocol */ = {
 			isa = PBXGroup;
 			children = (
+				DEED417F22F187F5002819F3 /* AnyDeletableTests.swift */,
 				DE2A440C2216A9F100474C3D /* AnyReadableRepositoryTests.swift */,
+				DEED417722F17291002819F3 /* AnyReadableTests.swift */,
 				DE794669221A476E009AD45D /* AnyRepositoryRETests.swift */,
 				DE79466B221A51D2009AD45D /* AnyRepositoryREWTests.swift */,
 				DE2A440E2216AD0400474C3D /* AnyRepositoryRWTests.swift */,
+				DEED417922F17FAD002819F3 /* AnySettableTests.swift */,
 				DE2A44102216BA9900474C3D /* KeyObject.swift */,
 			);
 			path = protocol;
@@ -192,10 +207,13 @@
 				DE50E56F22168F650059FB31 /* AnyRepositoryRE.swift */,
 				DE50E57122168F8E0059FB31 /* AnyRepositoryREW.swift */,
 				DE50E56D22168F290059FB31 /* AnyRepositoryRW.swift */,
+				DEED417D22F185EE002819F3 /* Deletable.swift */,
 				DE50E5752216900D0059FB31 /* EditableRepository.swift */,
 				DE9DFD452213B10300A94968 /* Injectable.swift */,
+				DEED417522F171FD002819F3 /* Readable.swift */,
 				DE50E56922168E680059FB31 /* ReadableRepository.swift */,
 				DE79466D221A5540009AD45D /* RepositoryError.swift */,
+				DEED417B22F17FE4002819F3 /* Settable.swift */,
 				DE50E55E221660070059FB31 /* Storyboardable.swift */,
 				DE50E57322168FF10059FB31 /* WritableRepository.swift */,
 			);
@@ -431,6 +449,7 @@
 				DE9DFD552213B10400A94968 /* TimeZone.swift in Sources */,
 				DE9DFD572213B10400A94968 /* Injectable.swift in Sources */,
 				DE9DFD562213B10400A94968 /* UIImage.swift in Sources */,
+				DEED417E22F185EE002819F3 /* Deletable.swift in Sources */,
 				DE9DFD602213B10400A94968 /* Calendar.swift in Sources */,
 				DE9DFD612213B10400A94968 /* Sequence+Decodable.swift in Sources */,
 				DE9DFD5A2213B10400A94968 /* NumberFormatter+NumberStyle.swift in Sources */,
@@ -440,6 +459,7 @@
 				DE9DFD642213B10400A94968 /* Sequence+Equatable.swift in Sources */,
 				DE9DFD652213B10400A94968 /* JSONDecoder+String.swift in Sources */,
 				DE50E56C22168F050059FB31 /* AnyReadableRepository.swift in Sources */,
+				DEED417622F171FD002819F3 /* Readable.swift in Sources */,
 				DE50E56A22168E680059FB31 /* ReadableRepository.swift in Sources */,
 				DEED417422F16670002819F3 /* UITableView.swift in Sources */,
 				DE9DFD5B2213B10400A94968 /* Array+Equtable.swift in Sources */,
@@ -448,6 +468,7 @@
 				DE9DFD632213B10400A94968 /* XibView.swift in Sources */,
 				DE9DFD622213B10400A94968 /* NSObject+ClassName.swift in Sources */,
 				DE79466E221A5540009AD45D /* RepositoryError.swift in Sources */,
+				DEED417C22F17FE4002819F3 /* Settable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -467,6 +488,8 @@
 				DE90D27B22150261006F6552 /* Sequence+EquatableTests.swift in Sources */,
 				DE2A440F2216AD0400474C3D /* AnyRepositoryRWTests.swift in Sources */,
 				DE79466C221A51D2009AD45D /* AnyRepositoryREWTests.swift in Sources */,
+				DEED417A22F17FAD002819F3 /* AnySettableTests.swift in Sources */,
+				DEED417822F17291002819F3 /* AnyReadableTests.swift in Sources */,
 				DE79466A221A476E009AD45D /* AnyRepositoryRETests.swift in Sources */,
 				DE90D27D2215044D006F6552 /* Array+EqutableTests.swift in Sources */,
 				DE90D28322152987006F6552 /* JSONDecoder+StringTests.swift in Sources */,
@@ -474,6 +497,7 @@
 				DE90D28D2215334A006F6552 /* Sequence+DecodableTests.swift in Sources */,
 				DE50E557221651980059FB31 /* StringTests.swift in Sources */,
 				DE90D28522152C24006F6552 /* LocaleTests.swift in Sources */,
+				DEED418022F187F5002819F3 /* AnyDeletableTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
