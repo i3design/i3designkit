@@ -12,7 +12,8 @@ import UIKit
 /// - class name と xib name を一致させる必要がある.
 /// - AutoresizingMaskではなくAutoLayoutを使用すること
 open class XibView: UIView {
-    override init(frame: CGRect) {
+    
+    public override init(frame: CGRect) {
         super.init(frame: frame)
         loadNib()
     }
@@ -22,8 +23,10 @@ open class XibView: UIView {
         loadNib()
     }
     
+    public func viewDidLoad() {}
+    
     private func loadNib() {
-        guard let view = Bundle.main.loadNibNamed(self.className, owner: self, options: nil)?.first as? UIView else {
+        guard let view = Bundle(for: type(of: self)).loadNibNamed(self.className, owner: self, options: nil)?.first as? UIView else {
             assertionFailure("cannot load nibName: \(self.className)")
             return
         }
@@ -35,5 +38,7 @@ open class XibView: UIView {
         view.topAnchor.constraint(equalTo: self.topAnchor).isActive = true
         view.leftAnchor.constraint(equalTo: self.leftAnchor).isActive = true
         view.rightAnchor.constraint(equalTo: self.rightAnchor).isActive = true
+        
+        viewDidLoad()
     }
 }
