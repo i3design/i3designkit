@@ -59,6 +59,8 @@
 		DE9DFD642213B10400A94968 /* Sequence+Equatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9DFD522213B10400A94968 /* Sequence+Equatable.swift */; };
 		DE9DFD652213B10400A94968 /* JSONDecoder+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9DFD532213B10400A94968 /* JSONDecoder+String.swift */; };
 		DE9DFD662213B10400A94968 /* Locale.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9DFD542213B10400A94968 /* Locale.swift */; };
+		DEED417222F165EC002819F3 /* UICollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEED417122F165EC002819F3 /* UICollectionView.swift */; };
+		DEED417422F16670002819F3 /* UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEED417322F16670002819F3 /* UITableView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -138,6 +140,8 @@
 		DE9DFD522213B10400A94968 /* Sequence+Equatable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Sequence+Equatable.swift"; sourceTree = "<group>"; };
 		DE9DFD532213B10400A94968 /* JSONDecoder+String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "JSONDecoder+String.swift"; sourceTree = "<group>"; };
 		DE9DFD542213B10400A94968 /* Locale.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Locale.swift; sourceTree = "<group>"; };
+		DEED417122F165EC002819F3 /* UICollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionView.swift; sourceTree = "<group>"; };
+		DEED417322F16670002819F3 /* UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -225,6 +229,8 @@
 				DE9DFD4B2213B10300A94968 /* UIColor.swift */,
 				DE9DFD442213B10300A94968 /* UIImage.swift */,
 				DE9DFD512213B10400A94968 /* XibView.swift */,
+				DEED417122F165EC002819F3 /* UICollectionView.swift */,
+				DEED417322F16670002819F3 /* UITableView.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -415,6 +421,7 @@
 			files = (
 				DE9DFD5C2213B10400A94968 /* UIApplication+URLScheme.swift in Sources */,
 				DE50E57022168F650059FB31 /* AnyRepositoryRE.swift in Sources */,
+				DEED417222F165EC002819F3 /* UICollectionView.swift in Sources */,
 				DE50E57422168FF10059FB31 /* WritableRepository.swift in Sources */,
 				DE9DFD5F2213B10400A94968 /* String.swift in Sources */,
 				DE9DFD582213B10400A94968 /* DateFormatter.swift in Sources */,
@@ -434,6 +441,7 @@
 				DE9DFD652213B10400A94968 /* JSONDecoder+String.swift in Sources */,
 				DE50E56C22168F050059FB31 /* AnyReadableRepository.swift in Sources */,
 				DE50E56A22168E680059FB31 /* ReadableRepository.swift in Sources */,
+				DEED417422F16670002819F3 /* UITableView.swift in Sources */,
 				DE9DFD5B2213B10400A94968 /* Array+Equtable.swift in Sources */,
 				DE9DFD592213B10400A94968 /* Either.swift in Sources */,
 				DE50E5762216900D0059FB31 /* EditableRepository.swift in Sources */,
