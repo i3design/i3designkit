@@ -10,6 +10,7 @@ import XCTest
 import PromiseKit
 @testable import i3designKit
 
+@available(*, deprecated)
 final class RERepository: RepositoryRE {
     typealias Element = KeyObject
     
@@ -64,6 +65,7 @@ final class RERepository: RepositoryRE {
     }
 }
 
+@available(*, deprecated)
 class AnyRepositoryRETests: XCTestCase {
 
     func test_elements() {

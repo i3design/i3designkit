@@ -10,6 +10,7 @@ import XCTest
 import PromiseKit
 @testable import i3designKit
 
+@available(*, deprecated)
 struct StubReadableRepository: ReadableRepository {
     
     typealias Element = KeyObject
@@ -34,6 +35,7 @@ struct StubReadableRepository: ReadableRepository {
     }
 }
 
+@available(*, deprecated)
 class AnyReadableRepositoryTests: XCTestCase {
 
     let objects = [

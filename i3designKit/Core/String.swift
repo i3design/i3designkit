@@ -8,12 +8,12 @@
 
 import Foundation
 
-extension String {
+public extension String {
     /// 指定した長さで文字列を分割します
     ///
     /// - Parameter size: 分割の単位となる長さ (例: 2文字毎に区切りたい場合は2を指定する)
     /// - Returns: 分割結果の配列
-    public func split(length: Int) -> [String] {
+    func split(length: Int) -> [String] {
         if length < 1 {
             return [self]
         }
@@ -26,5 +26,15 @@ extension String {
         }
         
         return source.components(separatedBy: ",")
+    }
+}
+
+public extension String {
+
+    func replacingCharacters<T>(in range: NSRange, with replacement: T) -> String where T: StringProtocol {
+        guard let r = Range(range, in: self) else {
+            return self
+        }
+        return replacingCharacters(in: r, with: replacement)
     }
 }

@@ -9,6 +9,7 @@
 import PromiseKit
 
 /// 読み出し機能をもったリポジトリパターン用プロトコル
+@available(*, deprecated, renamed: "Readable")
 public protocol ReadableRepository {
     
     associatedtype Element

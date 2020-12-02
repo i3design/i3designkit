@@ -9,6 +9,7 @@
 import PromiseKit
 
 /// Type Erasure for ReadableRepository & WritableRepository & EditableRepository
+@available(*, deprecated)
 public struct AnyRepositoryREW<E>: RepositoryREW {
     public typealias Element = E
     
