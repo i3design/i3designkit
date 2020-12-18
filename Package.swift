@@ -21,12 +21,10 @@ let package = Package(
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
         .target(
             name: "i3designKit",
-            path: "./i3designKit",
-            dependencies: []
-        ),
+            path: "i3designKit"),
         .testTarget(
             name: "i3designKitTests",
-            path: "./i3designKitTests",
             dependencies: ["i3designKit"]),
+            path: "i3designKitTests")
     ]
 )
