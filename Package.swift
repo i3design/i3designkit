@@ -24,7 +24,7 @@ let package = Package(
             path: "i3designKit"),
         .testTarget(
             name: "i3designKitTests",
-            dependencies: ["i3designKit"]),
+            dependencies: ["i3designKit"],
             path: "i3designKitTests")
     ]
 )
