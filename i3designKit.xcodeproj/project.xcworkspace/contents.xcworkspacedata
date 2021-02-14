@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:/Users/naganotakuto/github/i3Design/i3designkit/i3designKit.xcodeproj">
+      location = "self:">
    </FileRef>
 </Workspace>
