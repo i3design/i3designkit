@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BE9FE64C25D8E6E6001A8E55 /* PromiseKit in Frameworks */ = {isa = PBXBuildFile; productRef = BE9FE64B25D8E6E6001A8E55 /* PromiseKit */; };
 		DE0DC1C82228C41900B2958B /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = DE0DC1C72228C41900B2958B /* README.md */; };
 		DE2A440A2216A5BD00474C3D /* PromiseKit.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = DE50E56222166AF20059FB31 /* PromiseKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		DE2A440D2216A9F100474C3D /* AnyReadableRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2A440C2216A9F100474C3D /* AnyReadableRepositoryTests.swift */; };
@@ -162,6 +163,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DE50E56322166AF20059FB31 /* PromiseKit.framework in Frameworks */,
+				BE9FE64C25D8E6E6001A8E55 /* PromiseKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -352,6 +354,9 @@
 			dependencies = (
 			);
 			name = i3designKit;
+			packageProductDependencies = (
+				BE9FE64B25D8E6E6001A8E55 /* PromiseKit */,
+			);
 			productName = i3DesignKit;
 			productReference = DE9DFD292213B0BB00A94968 /* i3designKit.framework */;
 			productType = "com.apple.product-type.framework";
@@ -404,6 +409,9 @@
 				Base,
 			);
 			mainGroup = DE9DFD1F2213B0BB00A94968;
+			packageReferences = (
+				BE9FE64A25D8E6E6001A8E55 /* XCRemoteSwiftPackageReference "PromiseKit" */,
+			);
 			productRefGroup = DE9DFD2A2213B0BB00A94968 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -770,6 +778,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		BE9FE64A25D8E6E6001A8E55 /* XCRemoteSwiftPackageReference "PromiseKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mxcl/PromiseKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.8.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		BE9FE64B25D8E6E6001A8E55 /* PromiseKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BE9FE64A25D8E6E6001A8E55 /* XCRemoteSwiftPackageReference "PromiseKit" */;
+			productName = PromiseKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DE9DFD202213B0BB00A94968 /* Project object */;
 }

@@ -6,7 +6,7 @@
 //  Copyright © 2019 i3DESIGN. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 extension UIColor {
     
