@@ -36,4 +36,4 @@ To integrate i3designKit into your Xcode project using Carthage, specify it in y
 git "https://git.i3design.com/i3design-jp/i3designkit.git"
 ```
 
-Run `carthage update --platform iOS` to build the framework and drag the built `i3designKit.framework` into your Xcode project.
+Run `carthage update --platform iOS --use-xcframeworks` to build the framework and drag the built `i3designKit.framework` into your Xcode project.
