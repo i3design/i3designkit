@@ -9,4 +9,6 @@ Pod::Spec.new do |spec|
     spec.source_files = 'i3designKit.{h,m}'
     spec.framework    = 'SystemConfiguration'
     spec.requires_arc = true
+
+    spec.dependency 'PromiseKit'
 end
